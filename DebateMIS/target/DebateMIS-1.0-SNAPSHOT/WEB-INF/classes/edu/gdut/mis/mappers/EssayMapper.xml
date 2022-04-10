@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gdut.mis.mappers.EssayMapper">
+
+    <!--insertEssay()-->
+    <insert id="insertEssay" parameterType="edu.gdut.mis.entity.Essay" useGeneratedKeys="true" keyProperty="essayId">
+        insert into essay values(null,#{debateId},#{content},(select curdate()),null,#{username},#{title})
+    </insert>
+
+    <!--getEssayById-->
+    <select id="getEssayById" resultType="edu.gdut.mis.entity.Essay" parameterType="Integer">
+        select * from essay where debateid = #{debateId}
+    </select>
+
+</mapper>

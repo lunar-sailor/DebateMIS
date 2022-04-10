@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gdut.mis.mappers.LogMapper">
+
+    <select id="getPasswordById" parameterType="java.lang.Integer"
+            resultType="java.lang.String">
+        select password from debater where debateid = #{debateId}
+    </select>
+
+    <select id="getDebaterById" parameterType="java.lang.Integer"
+            resultType="edu.gdut.mis.entity.Debater">
+        select * from debater where debateid = #{debateId}
+    </select>
+</mapper>

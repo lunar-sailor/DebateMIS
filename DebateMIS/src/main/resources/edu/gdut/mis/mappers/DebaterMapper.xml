@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gdut.mis.mappers.DebaterMapper">
+
+    <!--int insertDebater();-->
+    <insert id="insertDebater" useGeneratedKeys="true" keyProperty="debateId">
+        insert into debater values(null,#{username},#{password} ,
+        #{tel},null,#{university},#{department})
+    </insert>
+
+
+    <!--void updateDebater();-->
+    <update id="updateDebater">
+        update debater set username = 'lulupig' where debateid = #{debateId}
+    </update>
+
+    <!--void deleteDebater();-->
+    <delete id="deleteDebater" parameterType="Integer">
+        delete from debater where debate_id = #{debateId}
+    </delete>
+
+    <!--Debater getDebaterById()-->
+    <!--
+        resultType设置默认的映射关系
+        resultMao设置自定义的映射关系
+    -->
+    <select id="getDebaterById" parameterType="Integer" resultType="edu.gdut.mis.entity.Debater">
+        SELECT * FROM debater where debateid = #{debateId}
+    </select>
+
+    <!--getusernameById()-->
+    <select id="getUsernameById" parameterType="Integer" resultType="edu.gdut.mis.entity.Debater">
+        select username from debater where debateid = #{debateId}
+    </select>
+    
+    <!--List<Debater> getAllDebater()-->
+    <select id="getAllDebater" resultType="edu.gdut.mis.entity.Debater">
+        select * from debater
+    </select>
+</mapper>

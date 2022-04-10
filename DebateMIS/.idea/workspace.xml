@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DebateMIS:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="mybatis-mapper" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.8.4" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="26vCFKZRlxP9hdGUqlMBOWbHzqs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.gdut.mis.mappers" />
+      <recent name="edu.gdut.mis.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaWorkspace\DebateMIS\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaWorkspace\DebateMIS\src\main\resources" />
+      <recent name="D:\JavaWorkspace\DebateMIS\src\main\webapp" />
+      <recent name="D:\JavaWorkspace\DebateMIS\src\main\webapp\WEB-INF" />
+      <recent name="D:\JavaWorkspace\DebateMIS\src\main\resources\edu.gdut.mis.mapper\edu\gdut\mis\mapper" />
+      <recent name="D:\JavaWorkspace\DebateMIS" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.DebateMIS">
+    <configuration name="ParamTest.ParamTestId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DebateMIS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gdut.mis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.gdut.mis.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.gdut.mis.test.ParamTest" />
+      <option name="METHOD_NAME" value="ParamTestId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamTest.ParamTestName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DebateMIS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gdut.mis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.gdut.mis.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.gdut.mis.test.ParamTest" />
+      <option name="METHOD_NAME" value="ParamTestName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMapper.TestCRUD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DebateMIS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gdut.mis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.gdut.mis.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.gdut.mis.test.TestMapper" />
+      <option name="METHOD_NAME" value="TestCRUD" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMapper.TestMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DebateMIS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gdut.mis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.gdut.mis.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.gdut.mis.test.TestMapper" />
+      <option name="METHOD_NAME" value="TestMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMapper.TestUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DebateMIS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gdut.mis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.gdut.mis.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.gdut.mis.test.TestMapper" />
+      <option name="METHOD_NAME" value="TestUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DebateMIS" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="DebateMIS:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/DebateMIS" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="8b2da606-9471-4b93-8ada-c8f72bb57af5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58428" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="DebateMIS:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestMapper.TestCRUD" />
+      <item itemvalue="JUnit.ParamTest.ParamTestName" />
+      <item itemvalue="JUnit.TestMapper.TestMapper" />
+      <item itemvalue="JUnit.TestMapper.TestUpdate" />
+      <item itemvalue="JUnit.ParamTest.ParamTestId" />
+      <item itemvalue="Tomcat Server.DebateMIS" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestMapper.TestCRUD" />
+        <item itemvalue="JUnit.ParamTest.ParamTestName" />
+        <item itemvalue="JUnit.ParamTest.ParamTestId" />
+        <item itemvalue="JUnit.TestMapper.TestUpdate" />
+        <item itemvalue="JUnit.TestMapper.TestMapper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="" />
+      <created>1648294579638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648294579638</updated>
+      <workItem from="1648294581547" duration="89000" />
+      <workItem from="1648294719657" duration="453000" />
+      <workItem from="1648295243505" duration="1573000" />
+      <workItem from="1648296915887" duration="105000" />
+      <workItem from="1648297071565" duration="4170000" />
+      <workItem from="1648391087160" duration="1924000" />
+      <workItem from="1648427013068" duration="10309000" />
+      <workItem from="1648452496670" duration="4002000" />
+      <workItem from="1648465866934" duration="2444000" />
+      <workItem from="1648513580566" duration="9168000" />
+      <workItem from="1648543475960" duration="9529000" />
+      <workItem from="1648599815799" duration="24765000" />
+      <workItem from="1648689269365" duration="7943000" />
+      <workItem from="1648710449256" duration="2942000" />
+      <workItem from="1648727367191" duration="8547000" />
+      <workItem from="1648816377703" duration="1587000" />
+      <workItem from="1648861693091" duration="592000" />
+      <workItem from="1649309628141" duration="19125000" />
+      <workItem from="1649340139899" duration="4698000" />
+      <workItem from="1649388436425" duration="71000" />
+      <workItem from="1649388595115" duration="6000" />
+      <workItem from="1649401458463" duration="5614000" />
+      <workItem from="1649467063248" duration="5328000" />
+      <workItem from="1649477736886" duration="6009000" />
+      <workItem from="1649486249500" duration="7903000" />
+      <workItem from="1649504202693" duration="10497000" />
+      <workItem from="1649554906040" duration="20141000" />
+      <workItem from="1649590439141" duration="8257000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/CookieUtil.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/CookieUtil.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/CookieUtil.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/LogService.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/LogService.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.Integer" memberName="value" />
+        <PinnedItemInfo parentTag="org.apache.ibatis.binding.MapperMethod" memberName="method" />
+        <PinnedItemInfo parentTag="org.apache.catalina.connector.Response" memberName="cookies" />
+        <PinnedItemInfo parentTag="org.apache.catalina.connector.Request" memberName="cookies" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

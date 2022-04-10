@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edg"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form class="form-horizontal" th:action="@{/insertDebater}" method="post">
+        <div class="col-lg-6 col-lg-offset-3">
+            <span class="input-group-addon ">用户名</span>
+            <input type="text" name="username" class="form-control" placeholder="用户名" aria-describedby="sizing-addon2">
+        </div>
+        <div class="col-lg-6 col-lg-offset-3">
+            <span class="input-group-addon">密码</span>
+            <input th:type="password" name="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
+        </div>
+        <div class="col-lg-6 col-lg-offset-3">
+            <span class="input-group-addon">电话</span>
+            <input type="text" name="tel" class="form-control" placeholder="电话" aria-describedby="sizing-addon2">
+        </div>
+        <div class="col-lg-6 col-lg-offset-3">
+            <span class="input-group-addon">高校</span>
+            <input type="text" name="university" class="form-control" placeholder="高校" aria-describedby="sizing-addon2">
+        </div>
+        <div class="col-lg-6 col-lg-offset-3">
+            <span class="input-group-addon">学院</span>
+            <input type="text" name="department" class="form-control" placeholder="学院" aria-describedby="sizing-addon2">
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-5 col-sm-10">
+                <button type="submit" class="btn btn-success">注册</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

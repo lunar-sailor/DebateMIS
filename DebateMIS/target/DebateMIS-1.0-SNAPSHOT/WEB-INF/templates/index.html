@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edg"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>请登录</title>
+</head>
+<body>
+
+<div class="page-header">
+    <h1>欢迎各位辩手<small>请登录系统</small></h1>
+</div>
+<form class="form-horizontal" th:action="@{/Login}" method="post">
+    <div class="col-lg-6 col-lg-offset-3">
+        <span class="input-group-addon ">账号</span>
+        <input type="text" name="debateId" class="form-control" placeholder="DebateId" aria-describedby="sizing-addon2">
+    </div>
+    <div class="col-lg-6 col-lg-offset-3">
+        <span class="input-group-addon">密码</span>
+        <input type="password" name="password" class="form-control" placeholder="password" aria-describedby="sizing-addon2">
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-5 col-sm-10">
+            <button type="button" class="btn btn-info">
+
+                <a th:href="@{/new}">注册</a>
+            </button>
+            <button type="submit" class="btn btn-success">登录</button>
+
+        </div>
+    </div>
+</form>
+</body>
+</html>
