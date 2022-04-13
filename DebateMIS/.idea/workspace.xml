@@ -9,38 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="IDEA Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/EssayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/EssayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/entity/Essay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/entity/Essay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/EssayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/EssayMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/EssayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/EssayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essayList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essayList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/newEssay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/newEssay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/EssayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/EssayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/LogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/ViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/service/EssayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/service/EssayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essayList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essayList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/newEssay.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/newEssay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/EssayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/EssayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/LogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/ViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/service/EssayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/service/EssayService.class" afterDir="false" />
-    </list>
+    <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="V1.1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,9 +45,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essayList.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/ViewController.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/EssayMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/EssayService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -361,8 +333,16 @@
       <workItem from="1649677067880" duration="1181000" />
       <workItem from="1649723109658" duration="15208000" />
       <workItem from="1649761923462" duration="9781000" />
-      <workItem from="1649809361578" duration="10168000" />
+      <workItem from="1649809361578" duration="10255000" />
     </task>
+    <task id="LOCAL-00001" summary="V1.1">
+      <created>1649820141970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649820141970</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +358,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="V1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
