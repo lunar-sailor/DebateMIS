@@ -5,7 +5,7 @@ public class Essay {
     private Integer debateId;
     private String content;
     private String date;
-    private Integer nol;
+    private Integer nol;//number of like
     private String username;
     private String title;
 

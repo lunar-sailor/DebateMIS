@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import utils.CookieUtil;
 
 import javax.servlet.http.HttpServletRequest;
@@ -30,13 +31,39 @@ public class EssayController {
         return "redirect:getEssayById";
     }
 
-    @RequestMapping("/getEssayById")//debateID
+    @RequestMapping("/getEssayByDebateId")//debateID
     public String getEssayById(@RequestParam(value = "pn",defaultValue = "1") Integer pn,
                                Model model, HttpServletRequest request){
         Integer debateId = Integer.valueOf(CookieUtil.getCookieByName(request,"debateId").getValue());
-        List<Essay> list =  essayService.getEssayById(debateId);
+        List<Essay> list =  essayService.getEssayByDebateId(debateId);
         PageInfo page = new PageInfo(list,5);
         model.addAttribute("pageInfo",page);
         return "essayList";
     }
+
+    @RequestMapping("/getEssayByEssayId")//debateID
+    public String getEssayByEssayId(HttpServletRequest request,Integer essayId,Model model){
+        Integer debateId = Integer.valueOf(CookieUtil.getCookieByName(request,"debateId").getValue());
+        Essay essay =  essayService.getEssayByEssayId(essayId);
+        model.addAttribute("username",essay.getUsername());
+        model.addAttribute("title",essay.getTitle());
+        model.addAttribute("content",essay.getContent());
+        model.addAttribute("nol",essay.getNol());
+        model.addAttribute("date",essay.getDate());
+        model.addAttribute("essayId",essay.getEssayId());
+        return "essay";
+    }
+
+    @RequestMapping("/getNol")
+    @ResponseBody
+    public Integer like(HttpServletRequest request,Integer essayId){
+        Integer nol = essayService.updateNol(essayId);
+        return nol;
+    }
+
+//    @RequestMapping("/showHotEssay")
+//    public List<Essay> showHotEssay(){
+//        List<Essay> list = essayService.showHotEssay();
+//        return list;
+//    }
 }

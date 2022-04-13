@@ -40,9 +40,27 @@ public class ViewController {
         return "redirect:getTeamById";
     }
 
+    /**
+     * toEssay有两个应用
+     * 1.是从debater的文章展示页面，点击跳转到指定文章（文章详细页面）
+     * 2.是打开“我的文章”页面（essayList）页面，根据debateId展示所有所有文章
+     *
+     */
     @RequestMapping("/toEssay")
-    public String toEssay(){
-        return "redirect:getEssayById";
+    public String toEssay(HttpServletRequest request,Integer essayId){
+        //判断请求中是否带参，带参则跳转文章详情页，不带参跳转文章列表
+        try{
+            if(essayId.equals(null)){   //实测，如果传参，可以获取essayId
+
+            }
+        }catch (NullPointerException e){
+            return "redirect:getEssayByDebateId";
+
+        }
+//        if(essayId.equals(null)){
+//            return "redirect:getEssayByDebateId";
+//        }
+        return "redirect:getEssayByEssayId";
     }
 
     @RequestMapping("/newEssay")

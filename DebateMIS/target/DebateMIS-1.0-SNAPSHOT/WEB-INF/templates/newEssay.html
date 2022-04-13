@@ -13,6 +13,10 @@
         <h1 class="col-lg-12"><small th:text="${username}"></small></h1>
     </div>
     <form method="post" th:action="@{/submit}">
+        <!--文章标题输入框-->
+        <div class="input-group-lg">
+            <input name="title" type="text" placeholder="文章标题" class="form-control">
+        </div>
         <div>
             <textarea name="content" maxlength="20000" class="col-lg-12 form-control" rows="25">
             </textarea>

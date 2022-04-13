@@ -17,8 +17,29 @@ public class EssayService {
         essayMapper.insertEssay(essay);
     }
 
-    public List<Essay> getEssayById(Integer debateId) {
-        List<Essay> list = essayMapper.getEssayById(debateId);
+    public List<Essay> getEssayByDebateId(Integer debateId) {
+        List<Essay> list = essayMapper.getEssayByDebateId(debateId);
+        return list;
+    }
+
+    public Essay getEssayByEssayId(Integer essayId) {
+        Essay essay = essayMapper.getEssayByEssayId(essayId);
+        return essay;
+    }
+
+    public Integer getNol(Integer essayId){
+        Integer nol = essayMapper.getNol(essayId);
+        return essayId;
+    }
+
+    public Integer updateNol(Integer essayId){
+        essayMapper.updateNol(essayId);
+        Integer nol = essayMapper.getNol(essayId);
+        return nol;
+    }
+
+    public List<Essay> showHotEssay() {
+        List<Essay> list = essayMapper.showHotEssay();
         return list;
     }
 }

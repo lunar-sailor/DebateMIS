@@ -6,30 +6,67 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 <body>
     <div class="page-header">
-        <h1>文章标题<small>作者</small></h1>
-    </div>
-
-    <div class="col-lg-12 col-lg-offset-1">
-        <span>分类：</span>
-        <span class="label label-info">标签</span>
-    </div>
-    <div class="col-lg-12 col-lg-offset-1">
-        <span>发布时间：</span>
-        <span>2022-04-09</span>
+        <h1 th:text="${title}"></h1>
+        <h1><small th:text="${username}" h></small></h1>
     </div>
 
     <div>
-        <div class="col-lg-12">
+        <textarea th:text="${content}" class="col-lg-12 form-control" rows="25">
+        </textarea>
+    </div>
+
+    <div class="col-lg-12">
+        <span class="col-lg-2 col-lg-offset-1">
+            <button class="btn-lg btn-danger glyphicon glyphicon-thumbs-up"
+                    th:text="${nol}" id="like"></button>
+
+        </span>
+        <span class="col-lg-2 col-lg-offset-9">
+            <div>
+                <span>分类：</span>
+                <span class="label label-info">标签</span>
+            </div>
+            <div>
+                <span>发布时间</span>
+                <span class="label label-info" th:text="${date}"></span>
+            </div>
+        </span>
+    </div>
+
+    <div class="col-lg-12">
+        <div>
             <textarea placeholder="请输入评论信息" maxlength="200"
                       class="col-lg-6 col-lg-offset-3"></textarea>
         </div>
-        <div class="col-lg-12">
-            <input th:action="@{/insertComment}" value="发布"
-                   class="btn btn-success col-lg-1 col-lg-offset-8">
-        </div>
     </div>
+
+    <script th:inline="javascript">
+        var nol = [[${nol}]];
+        // var essayId = [[${essayId}]]
+        const btn = document.getElementById("like");
+        const xhr = new XMLHttpRequest();
+        btn.addEventListener('click',function (){
+            // console.log("123");
+            xhr.open('POST','http://localhost:8080/DebateMIS/getNol?essayId='+ [[${essayId}]]);
+            xhr.send();
+            // console.log("sended");
+            xhr.onreadystatechange = function (){
+                if (xhr.readyState === 4){
+                    // console.log("4");
+                    // console.log(xhr.status);
+                    if (xhr.status >= 200 && xhr.status <300){
+                        nol = xhr.response;
+                        console.log(nol);
+                        btn.innerHTML=nol;
+                    }
+                }
+            }
+        })
+
+    </script>
 </body>
 </html>

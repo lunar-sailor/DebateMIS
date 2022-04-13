@@ -8,5 +8,13 @@ public interface EssayMapper {
 
     public void insertEssay(Essay essay);
 
-    List<Essay> getEssayById(Integer debateId);
+    List<Essay> getEssayByDebateId(Integer debateId);
+
+    Essay getEssayByEssayId(Integer essayId);
+
+    Integer getNol(Integer essayId);
+
+    void updateNol(Integer essayId);
+
+    List<Essay> showHotEssay();
 }

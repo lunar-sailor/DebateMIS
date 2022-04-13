@@ -9,9 +9,28 @@
         insert into essay values(null,#{debateId},#{content},(select curdate()),null,#{username},#{title})
     </insert>
 
-    <!--getEssayById-->
-    <select id="getEssayById" resultType="edu.gdut.mis.entity.Essay" parameterType="Integer">
+    <!--getEssayByDebateId-->
+    <select id="getEssayByDebateId" resultType="edu.gdut.mis.entity.Essay" parameterType="Integer">
         select * from essay where debateid = #{debateId}
     </select>
 
+    <!--getEssayByEssayId-->
+    <select id="getEssayByEssayId" resultType="edu.gdut.mis.entity.Essay" parameterType="Integer">
+        select * from essay where essayid = #{essayId}
+    </select>
+
+    <!--getNol-->
+    <select id="getNol" resultType="java.lang.Integer" parameterType="Integer">
+        select nol from essay where essayid = #{essayId}
+    </select>
+
+    <!--updateNol-->
+    <update id="updateNol">
+        update essay set nol = nol+1 where essayid = #{essayId}
+    </update>
+
+    <!--showHotEssay-->
+    <select id="showHotEssay" resultType="edu.gdut.mis.entity.Essay">
+        SELECT * FROM essay ORDER BY nol,date DESC LIMIT 10
+    </select>
 </mapper>

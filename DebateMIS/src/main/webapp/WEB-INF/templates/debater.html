@@ -55,9 +55,13 @@
             </span>
             <!--文章-->
             <span class="col-lg-9">
-                <ul th:each="">
-
-                </ul>
+                <table class="table table-hover">
+                    <tr th:each="hotEssayList:${hotEssayList}">
+                        <td th:text="${hotEssayList.title}"></td>
+                        <td th:text="${hotEssayList.username}"></td>
+                        <td th:text="${hotEssayList.nol}"></td>
+                    </tr>
+                </table>
             </span>
         </div>
     </div>

@@ -26,7 +26,7 @@
                     <th>作者</th>
                     <th>日期</th>
                 </tr>
-                <tr th:each="essay:${pageInfo.list}">
+                <tr th:each="essay:${pageInfo.list}" >
                     <td th:text="${essay.essayId}"></td>
                     <td th:text="${essay.title}" ></td>
                     <td th:text="${essay.nol}"></td>
@@ -36,8 +36,8 @@
                         <button class="btn btn-primary btn-sm">
                             <span class="glyphicon glyphicon-pencil" aria-hidden="true">编辑</span>
                         </button>
-                        <button class="btn btn-danger btn-sm">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true">删除</span>
+                        <button class="btn btn-info btn-sm">
+                            <a th:href="@{/getEssayByEssayId(essayId=${essay.essayId})}" th:text="详情" h></a>
                         </button>
                     </th>
                 </tr>
@@ -100,5 +100,10 @@
             </nav>
         </div>
     </div>
+    <script>
+        document.getElementsByTagName('tr').onclick = function toEssay(){
+            window.location.href='/toEssay(essayId=${essay.essayId})'
+        }
+    </script>
 </body>
 </html>
