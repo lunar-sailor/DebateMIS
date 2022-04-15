@@ -11,7 +11,7 @@
 <body>
     <div class="page-header">
         <h1 th:text="${title}"></h1>
-        <h1><small th:text="${username}" h></small></h1>
+        <h1><small th:text="${username}"></small></h1>
     </div>
 
     <div>
@@ -26,13 +26,13 @@
 
         </span>
         <span class="col-lg-2 col-lg-offset-9">
-            <div>
-                <span>分类：</span>
-                <span class="label label-info">标签</span>
+            <div glyphicon glyphicon-tag>
+                <span class="glyphicon glyphicon-tag"></span>
+                <span>标签</span>
             </div>
-            <div>
+            <div  class="label label-info" >
                 <span>发布时间</span>
-                <span class="label label-info" th:text="${date}"></span>
+                <span th:text="${date}"></span>
             </div>
         </span>
     </div>
@@ -45,25 +45,30 @@
     </div>
 
     <script th:inline="javascript">
+        var flag = true;
         var nol = [[${nol}]];
         // var essayId = [[${essayId}]]
         const btn = document.getElementById("like");
         const xhr = new XMLHttpRequest();
         btn.addEventListener('click',function (){
             // console.log("123");
-            xhr.open('POST','http://localhost:8080/DebateMIS/getNol?essayId='+ [[${essayId}]]);
-            xhr.send();
-            // console.log("sended");
-            xhr.onreadystatechange = function (){
-                if (xhr.readyState === 4){
-                    // console.log("4");
-                    // console.log(xhr.status);
-                    if (xhr.status >= 200 && xhr.status <300){
-                        nol = xhr.response;
-                        console.log(nol);
-                        btn.innerHTML=nol;
+            if (flag){
+                xhr.open('POST','http://localhost:8080/DebateMIS/getNol?essayId='+ [[${essayId}]]);
+                xhr.send();
+                console.log("sended");
+                xhr.onreadystatechange = function (){
+                    if (xhr.readyState === 4){
+                        // console.log("4");
+                        // console.log(xhr.status);
+                        if (xhr.status >= 200 && xhr.status <300){
+                            nol = xhr.response;
+                            console.log(nol);
+                            btn.innerHTML=nol;
+                            flag=false;
+                        }
                     }
                 }
+
             }
         })
 

@@ -31,6 +31,6 @@
 
     <!--showHotEssay-->
     <select id="showHotEssay" resultType="edu.gdut.mis.entity.Essay">
-        SELECT * FROM essay ORDER BY nol,date DESC LIMIT 10
+        SELECT * FROM essay ORDER BY nol DESC LIMIT 10
     </select>
 </mapper>

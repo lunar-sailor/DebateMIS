@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="V1.1" />
+    <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="V1.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/DebaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/DebaterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,11 +31,11 @@
       <list>
         <option value="FxmlFile" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="JavaScript File" />
-        <option value="Class" />
-        <option value="mybatis-mapper" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="mybatis-mapper" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,11 +57,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essayList.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/ViewController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/EssayMapper.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/EssayService.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -70,7 +82,9 @@
     </option>
   </component>
   <component name="ProjectId" id="26vCFKZRlxP9hdGUqlMBOWbHzqs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -334,6 +348,10 @@
       <workItem from="1649723109658" duration="15208000" />
       <workItem from="1649761923462" duration="9781000" />
       <workItem from="1649809361578" duration="10255000" />
+      <workItem from="1649832382341" duration="2094000" />
+      <workItem from="1649851382446" duration="7224000" />
+      <workItem from="1649984193087" duration="7436000" />
+      <workItem from="1650009510261" duration="2771000" />
     </task>
     <task id="LOCAL-00001" summary="V1.1">
       <created>1649820141970</created>
@@ -342,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649820141970</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="V1.1">
+      <created>1649832417603</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649832417603</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

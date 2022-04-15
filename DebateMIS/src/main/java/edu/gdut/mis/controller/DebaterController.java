@@ -68,5 +68,4 @@ public class DebaterController {
         model.addAttribute("pageInfo",page);
         return "list";
     }
-
 }
