@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="V1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/DebaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/DebaterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="V1.2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,11 +46,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/CommentService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/CommentController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essayList.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/ViewController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/EssayMapper.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/EssayService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/CommentMapper.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
@@ -351,7 +343,7 @@
       <workItem from="1649832382341" duration="2094000" />
       <workItem from="1649851382446" duration="7224000" />
       <workItem from="1649984193087" duration="7436000" />
-      <workItem from="1650009510261" duration="2771000" />
+      <workItem from="1650009510261" duration="2873000" />
     </task>
     <task id="LOCAL-00001" summary="V1.1">
       <created>1649820141970</created>
@@ -367,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649832417603</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="V1.2">
+      <created>1650014230638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650014230638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +385,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.1" />
+    <MESSAGE value="V1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
