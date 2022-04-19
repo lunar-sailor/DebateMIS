@@ -38,13 +38,11 @@ public class LogController {
             model.addAttribute("username",debater.getUsername());
             CookieUtil.setCookie(response,"debateId",debater.getDebateId().toString(),1800);
             CookieUtil.setCookie(response,"username",debater.getUsername(),1800);
-
             try{
                 CookieUtil.setCookie(response,"teamId",debater.getTeamId().toString(),1800);
             }catch (NullPointerException e){
                 CookieUtil.setCookie(response,"teamId","0",1800);
             }
-
             return "debater";
         }else {
             return "index";

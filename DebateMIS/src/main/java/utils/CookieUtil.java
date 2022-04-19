@@ -35,6 +35,7 @@ public class CookieUtil {
         cookie.setMaxAge(time);
         //将cookie添加到Response中，cookie没有更新，只能覆盖
         response.addCookie(cookie);
+        System.out.println(cookie);
         return response;
     }
 
