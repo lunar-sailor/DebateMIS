@@ -7,7 +7,7 @@
     <!--int insertDebater();-->
     <insert id="insertDebater" useGeneratedKeys="true" keyProperty="debateId">
         insert into debater values(null,#{username},#{password} ,
-        #{tel},null,#{university},#{department})
+        #{tel},null,#{university},#{department},#{img})
     </insert>
 
 

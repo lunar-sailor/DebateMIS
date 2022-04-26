@@ -6,7 +6,7 @@
 
     <!--insertEssay()-->
     <insert id="insertEssay" parameterType="edu.gdut.mis.entity.Essay" useGeneratedKeys="true" keyProperty="essayId">
-        insert into essay values(null,#{debateId},#{content},(select curdate()),null,#{username},#{title})
+        insert into essay values(null,#{debateId},#{content},(select curdate()),#{nol},#{username},#{title})
     </insert>
 
     <!--getEssayByDebateId-->
@@ -31,6 +31,6 @@
 
     <!--showHotEssay-->
     <select id="showHotEssay" resultType="edu.gdut.mis.entity.Essay">
-        SELECT * FROM essay ORDER BY nol DESC LIMIT 10
+        SELECT * FROM topessay
     </select>
 </mapper>

@@ -9,25 +9,31 @@
 </head>
 <body>
     <form class="form-horizontal" th:action="@{/insertDebater}" method="post">
-        <div class="col-lg-6 col-lg-offset-3">
-            <span class="input-group-addon ">用户名</span>
-            <input type="text" name="username" class="form-control" placeholder="用户名" aria-describedby="sizing-addon2">
+        <div class="col-lg-3" style="border-right-color: #0f0f0f">
+            <img src="" class="img-circle" id="img">
+            <input type="file" name="img" id="exampleInputFile" onchange="showImg()" accept="image/gif, image/jpg, image/png">
         </div>
-        <div class="col-lg-6 col-lg-offset-3">
-            <span class="input-group-addon">密码</span>
-            <input th:type="password" name="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
-        </div>
-        <div class="col-lg-6 col-lg-offset-3">
-            <span class="input-group-addon">电话</span>
-            <input type="text" name="tel" class="form-control" placeholder="电话" aria-describedby="sizing-addon2">
-        </div>
-        <div class="col-lg-6 col-lg-offset-3">
-            <span class="input-group-addon">高校</span>
-            <input type="text" name="university" class="form-control" placeholder="高校" aria-describedby="sizing-addon2">
-        </div>
-        <div class="col-lg-6 col-lg-offset-3">
-            <span class="input-group-addon">学院</span>
-            <input type="text" name="department" class="form-control" placeholder="学院" aria-describedby="sizing-addon2">
+        <div class="col-lg-6">
+            <div>
+                <span class="input-group-addon ">用户名</span>
+                <input type="text" name="username" class="form-control" placeholder="用户名" aria-describedby="sizing-addon2">
+            </div>
+            <div>
+                <span class="input-group-addon">密码</span>
+                <input th:type="password" name="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2">
+            </div>
+            <div>
+                <span class="input-group-addon">电话</span>
+                <input type="text" name="tel" class="form-control" placeholder="电话" aria-describedby="sizing-addon2">
+            </div>
+            <div>
+                <span class="input-group-addon">高校</span>
+                <input type="text" name="university" class="form-control" placeholder="高校" aria-describedby="sizing-addon2">
+            </div>
+            <div>
+                <span class="input-group-addon">学院</span>
+                <input type="text" name="department" class="form-control" placeholder="学院" aria-describedby="sizing-addon2">
+            </div>
         </div>
 
         <div class="form-group">
@@ -36,5 +42,18 @@
             </div>
         </div>
     </form>
+    <script th:inline="javascript">
+        var showImg = function (){
+            var img = document.querySelector('img');
+            const fileReader = new FileReader();
+            var imgFile = document.querySelector('input[type=file]').files[0];
+            fileReader.addEventListener('load',function (){
+                img.src = fileReader.result;
+            },false);
+            if (imgFile){
+                fileReader.readAsDataURL(imgFile);
+            }
+        }
+    </script>
 </body>
 </html>

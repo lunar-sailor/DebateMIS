@@ -1,7 +1,9 @@
 package edu.gdut.mis.controller;
 
 import com.github.pagehelper.PageInfo;
+import edu.gdut.mis.entity.Comment;
 import edu.gdut.mis.entity.Essay;
+import edu.gdut.mis.service.CommentService;
 import edu.gdut.mis.service.EssayService;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 import utils.CookieUtil;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,15 +23,17 @@ import java.util.List;
 public class EssayController {
     @Autowired
     EssayService essayService;
+    @Autowired
+    CommentService commentService;
 
 
     @RequestMapping("/submit")
     public String submit(String content, Integer debateId, String username, String title, HttpServletRequest request){
         username = CookieUtil.getCookieByName(request,"username").getValue();
         debateId = Integer.valueOf(CookieUtil.getCookieByName(request,"debateId").getValue());
-        Essay essay = new Essay(null,debateId,content,null,null,username,title);
+        Essay essay = new Essay(null,debateId,content,null,0,username,title);
         essayService.insertEssay(essay);
-        return "redirect:getEssayById";
+        return "redirect:getEssayByDebateId";
     }
 
     @RequestMapping("/getEssayByDebateId")//debateID
@@ -41,16 +46,23 @@ public class EssayController {
         return "essayList";
     }
 
-    @RequestMapping("/getEssayByEssayId")//debateID
-    public String getEssayByEssayId(HttpServletRequest request,Integer essayId,Model model){
+    @RequestMapping("/getEssayByEssayId")//essayID
+    public String getEssayByEssayId(@RequestParam(value = "pn",defaultValue = "1") Integer pn,
+                                    HttpServletRequest request, Integer essayId, Model model){
         Integer debateId = Integer.valueOf(CookieUtil.getCookieByName(request,"debateId").getValue());
         Essay essay =  essayService.getEssayByEssayId(essayId);
+        //加载对应的评论
+        List<Comment> list = commentService.getAllCommentByEssayId(essayId);
+        PageInfo page = new PageInfo(list,5);
+
         model.addAttribute("username",essay.getUsername());
         model.addAttribute("title",essay.getTitle());
         model.addAttribute("content",essay.getContent());
         model.addAttribute("nol",essay.getNol());
         model.addAttribute("date",essay.getDate());
         model.addAttribute("essayId",essay.getEssayId());
+        model.addAttribute("commentList",page);
+
         return "essay";
     }
 

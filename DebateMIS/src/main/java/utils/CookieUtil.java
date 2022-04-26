@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CookieUtil {
-
     /**
      *保存cookie
      * @param response
@@ -18,13 +17,11 @@ public class CookieUtil {
      * @param time
      * @return
      */
-    public static HttpServletResponse setCookie(
-            HttpServletResponse response,String key,String value,int time){
+    public static HttpServletResponse setCookie(HttpServletResponse response,String key,String value,int time){
         //new 一个Cookie对象，键值对是参数
         Cookie cookie = new Cookie(key,value);
         //以"/"开头的url都能访问cookie
         cookie.setPath("/");
-
         //对cookie编码进行设置
         try{
             URLEncoder.encode(value,"utf-8");

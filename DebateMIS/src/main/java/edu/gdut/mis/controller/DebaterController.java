@@ -27,8 +27,8 @@ public class DebaterController {
     ModelAndView mav = new ModelAndView();
 
     @RequestMapping("/insertDebater")
-    public ModelAndView insertDebater(String username,String password,String tel,String university,String department){
-        Debater debater = new Debater(null,username,password,tel,null,university,department);
+    public ModelAndView insertDebater(String username,String password,String tel,String university,String department,String img){
+        Debater debater = new Debater(null,username,password,tel,null,university,department,img);
         int debateId =  debaterService.insertDebater(debater);
         debater = debaterService.getDebaterById(debateId);
         //System.out.println(debater);
@@ -37,6 +37,7 @@ public class DebaterController {
         mav.addObject("tel",debater.getTel());
         mav.addObject("university",debater.getUniversity());
         mav.addObject("department",debater.getDepartment());
+        mav.addObject("img",debater.getImg());
         mav.setViewName("debater");
         return mav;
     }

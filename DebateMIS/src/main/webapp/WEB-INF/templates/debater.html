@@ -17,11 +17,9 @@
 <body>
 
     <div class="page-header col-lg-12">
-        <!--用户头像 再说
-        <img src="..." alt="..." class="img-circle">
-        -->
         <h1 th:text="${username}" class="col-lg-2"></h1>
         <h1 class="col-lg-2"><small th:text="Welcome">Welcome</small></h1>
+        <img th:src="${img}" class="img-circle">
     </div>
     <!--
         全页面横向布局为三列

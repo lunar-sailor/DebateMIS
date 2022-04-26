@@ -30,7 +30,7 @@
                 <span class="glyphicon glyphicon-tag"></span>
                 <span>标签</span>
             </div>
-            <div  class="label label-info" >
+            <div  class="label label-info">
                 <span>发布时间</span>
                 <span th:text="${date}"></span>
             </div>
@@ -39,27 +39,32 @@
 
     <div class="col-lg-12">
         <textarea placeholder="请输入评论信息" maxlength="200"
-                  class="col-lg-6 col-lg-offset-3" id="comment"></textarea>
-        <button class="btn btn-success" id="sendComment" onclick="sendComment()"></button>
+                  class="col-lg-6 col-lg-offset-3" id="commentInput"></textarea>
+        <button class="btn btn-success" id="sendComment" onclick="sendComment()" th:text="发送"></button>
     </div>
-    <div class="col-lg-12">
-        <span th:text="${commentUsername}"></span>
-        <span th:text="${commentContent}"></span>
-        <span th:text="${commentNol}"></span>
+    <div class="col-lg-6 col-lg-offset-3">
+        <table class="table table-hover">
+            <tr>
+                <h3 class="col-lg-offset-4">热门评论</h3>
+            </tr>
+            <tr th:each="commentList:${commentList.list}" id="comment">
+                <td th:text="${commentList.username}"></td>
+                <td th:text="${commentList.content}"></td>
+                <td th:text="${commentList.nol}"></td>
+            </tr>
+        </table>
     </div>
 
     <script th:inline="javascript">
         var flag = true;
         var essayId = [[${essayId}]];
+        const comment = document.getElementById("comment");
 
         var sendComment = function (){
-            var comment = document.getElementById("comment").value;
+            var commentInput = document.getElementById("commentInput").value;
             var username = getCookie(" username");
-            console.log(username);
             var debateId = getCookie("debateId");
-            console.log(debateId);
-            insertComment(essayId,debateId,username,comment);
-
+            insertComment(essayId,debateId,username,commentInput,comment);
         }
 
         var like = function (){
@@ -84,29 +89,30 @@
             }
         }
 
-        function insertComment(essayId,debateId,username,comment){
+        function insertComment(essayId,debateId,username,commentInput,comment){
             const xhr = new XMLHttpRequest();
+            var commentList = [[${commentList.list}]];
+            console.log(commentList);
             xhr.open('POST','http://localhost:8080/DebateMIS/insertComment?' +
-                'essayId='+essayId+'&debateId='+debateId+'&username='+username+'&content='+comment);
+                'essayId='+essayId+'&debateId='+debateId+'&username='+username+'&content='+commentInput);
             xhr.send();
             xhr.onreadystatechange = function (){
                 if (xhr.readyState === 4){
                     if (xhr.status >= 200 && xhr.status <300){
-                        console.log(xhr.response);
+                        commentList = xhr.response;
+                        comment.setAttribute(commentList,commentList);
+                        // console.log(xhr.response);
+                        // comment.replaceWith(commentList,xhr.response);
                     }
                 }
             }
         }
 
         function getCookie(name) {
-            console.log(document.cookie);
             var arr = document.cookie.split(";");
-            console.log(arr);
             for (var i=0; i<arr.length; i++){
                 var arr2 = arr[i].split("=");
-                console.log(arr2);
                 if (arr2[0] === name){
-                    console.log(arr2[0]);
                     return arr2[1];
                 }
             }

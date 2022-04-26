@@ -9,9 +9,10 @@ public class Debater {
     private Integer teamId;
     private String university;
     private String department;
+    private String img;
 
     public Debater(Integer debateId, String username, String password,
-                   String tel, Integer teamId, String university, String department) {
+                   String tel, Integer teamId, String university, String department,String img) {
         this.debateId = debateId;
         this.username = username;
         this.password = password;
@@ -19,6 +20,7 @@ public class Debater {
         this.teamId = teamId;
         this.university = university;
         this.department = department;
+        this.img = img;
     }
 
     //补充一个无参构造器
@@ -81,6 +83,14 @@ public class Debater {
         this.department = department;
     }
 
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
     @Override
     public String toString() {
         return "Debater{" +
@@ -91,6 +101,7 @@ public class Debater {
                 ", teamId=" + teamId +
                 ", university='" + university + '\'' +
                 ", department='" + department + '\'' +
+                ", img='" + img + '\'' +
                 '}';
     }
 }
