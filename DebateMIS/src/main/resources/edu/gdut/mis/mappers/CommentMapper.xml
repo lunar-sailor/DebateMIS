@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gdut.mis.mappers.CommentMapper">
+
+    <!--void insertComment(Comment comment);-->
+    <insert id="insertComment" useGeneratedKeys="true" keyProperty="commentId">
+        insert into allcomment values(
+        null,#{essayId},#{debateId},#{content},#{username},null)
+    </insert>
+
+    <!--void deleteComment(Integer essayId,String username);-->
+    <delete id="deleteComment">
+        delete from allcomment where essayid=#{essayId} AND username=#{username}
+    </delete>
+
+    <select id="getCommentById" parameterType="Integer" resultType="edu.gdut.mis.entity.Comment">
+        select * from allcomment where commentid = #{commentId}
+    </select>
+
+    <!--getAllcommentByUsername(String username);-->
+    <select id="getAllcommentByUsername" resultType="edu.gdut.mis.entity.Comment"
+            parameterType="java.lang.String">
+        select * from allcomment where username=#{username}
+    </select>
+
+    <!--getAllcommentByEssayId(Integer essayId);-->
+    <select id="getAllcommentByEssayId" resultType="edu.gdut.mis.entity.Comment"
+            parameterType="java.lang.Integer">
+        select * from allcomment where essayid=#{essayId}
+    </select>
+
+</mapper>
