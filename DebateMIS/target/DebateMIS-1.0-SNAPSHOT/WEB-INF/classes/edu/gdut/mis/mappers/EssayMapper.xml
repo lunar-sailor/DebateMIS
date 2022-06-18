@@ -29,6 +29,16 @@
         update essay set nol = nol+1 where essayid = #{essayId}
     </update>
 
+    <!--void insertLike_Record(Integer essayId,Integer debateId);-->
+    <insert id="insertLike_Record">
+        insert into like_record values(null,#{essayId},#{debateId})
+    </insert>
+
+    <!--boolean hasLiked(Integer essayId,Integer debateId);-->
+    <select id="hasLiked" parameterType="java.lang.Integer" resultType="int">
+        select count(1) from like_record where essayid = #{essayId} and debateid = #{debateId}
+    </select>
+
     <!--showHotEssay-->
     <select id="showHotEssay" resultType="edu.gdut.mis.entity.Essay">
         SELECT * FROM topessay

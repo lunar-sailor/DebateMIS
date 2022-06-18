@@ -69,20 +69,17 @@
 
         var like = function (){
             const btn = document.getElementById('like');
-            if (flag){
                 updateNol(essayId,btn);
-            }
         }
 
         function updateNol(essayId,btn){
             const xhr = new XMLHttpRequest();
-            xhr.open('POST','http://localhost:8080/DebateMIS/getNol?essayId='+essayId);
+            xhr.open('POST','http://localhost:8080/DebateMIS/updateNol?essayId='+essayId);
             xhr.send();
             xhr.onreadystatechange = function (){
                 if (xhr.readyState === 4){
                     if (xhr.status >= 200 && xhr.status <300){
                         var nol = xhr.response;
-                        flag=false;
                         btn.innerHTML=nol;
                     }
                 }

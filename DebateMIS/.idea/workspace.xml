@@ -11,6 +11,38 @@
   <component name="ChangeListManager">
     <list default="true" id="a6f73dd5-8376-4818-b990-3cf01eafbd83" name="Changes" comment="V1.2.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/DebaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/DebaterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/EssayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/EssayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/LogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/controller/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/EssayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/mappers/EssayMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/EssayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/EssayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/CookieUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CookieUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/debater.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/essay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userCenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/userCenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/DebaterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/DebaterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/EssayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/EssayController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/LogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/controller/ViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/service/EssayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/edu/gdut/mis/service/EssayService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/utils/CookieUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/classes/utils/CookieUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/debater.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/essay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/userCenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/DebateMIS-1.0-SNAPSHOT/WEB-INF/templates/userCenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/DebaterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/DebaterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/EssayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/EssayController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/LogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/controller/ViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/mappers/EssayMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gdut/mis/service/EssayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gdut/mis/service/EssayService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/CookieUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/CookieUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +63,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="09ecd7152da5c2f64897f2573a2aec12740446bf" />
@@ -375,7 +413,23 @@
       <workItem from="1650978796917" duration="1224000" />
       <workItem from="1650980928520" duration="4243000" />
       <workItem from="1651130055616" duration="1440000" />
-      <workItem from="1651132045864" duration="434000" />
+      <workItem from="1651132045864" duration="2628000" />
+      <workItem from="1651482860940" duration="76000" />
+      <workItem from="1652506953705" duration="581000" />
+      <workItem from="1653265945351" duration="592000" />
+      <workItem from="1653291943585" duration="2001000" />
+      <workItem from="1654064664979" duration="1273000" />
+      <workItem from="1654066596348" duration="680000" />
+      <workItem from="1654085950309" duration="1472000" />
+      <workItem from="1655016517823" duration="5637000" />
+      <workItem from="1655095527668" duration="4175000" />
+      <workItem from="1655185326594" duration="10007000" />
+      <workItem from="1655257230834" duration="5036000" />
+      <workItem from="1655267423614" duration="1810000" />
+      <workItem from="1655369445426" duration="997000" />
+      <workItem from="1655371341102" duration="9334000" />
+      <workItem from="1655445540789" duration="7943000" />
+      <workItem from="1655455034769" duration="1135000" />
     </task>
     <task id="LOCAL-00001" summary="V1.1">
       <created>1649820141970</created>
@@ -426,7 +480,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650979802865</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="V1.2.1">
+      <created>1651132560030</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651132560030</updated>
+    </task>
+    <task id="LOCAL-00009" summary="V1.2.1">
+      <created>1651132844211</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651132844211</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,21 +526,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/CookieUtil.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/CookieUtil.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/CookieUtil.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/gdut/mis/service/LogService.java</url>
           <line>13</line>

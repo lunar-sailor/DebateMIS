@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        a{
-            text-decoration: none;
-            color: white;
-            -moz-user-focus: normal;
-        }
-    </style>
 </head>
 <body>
 
@@ -22,7 +15,7 @@
         <img th:src="${img}" class="img-circle">
     </div>
     <!--
-        全页面横向布局为三列
+        全页面横向布局为两列
     -->
     <div class="container">
 
@@ -31,41 +24,81 @@
             <span class="col-lg-2">
                 <div style="padding-top: 20px;padding-bottom: 20px">
                     <button type="button" class="btn btn-primary btn-lg btn-block">
-                        <a th:href="@{/toUserCenter}" th:text="个人中心"></a></button>
+                        <a th:href="@{/toUserCenter}"
+                           th:text="个人中心"
+                           style="color: white"></a></button>
                 </div>
                 
                 <div style="padding-top: 20px;padding-bottom: 20px">
                     <button type="button" class="btn btn-danger btn-lg btn-block">
-                        <a th:href="@{/toTeam}" th:text="辩论队" ></a> </button>
+                        <a th:href="@{/toTeam}"
+                           th:text="辩论队"
+                           style="color: white"></a> </button>
                 </div>
 
                 <div style="padding-top: 20px;padding-bottom: 20px">
                     <button type="button" class="btn btn-success btn-lg btn-block">
-                        <a th:href="@{/toEssay}" th:text="我的文章"></a></button>
+                        <a th:href="@{/toEssay}"
+                           th:text="我的文章"
+                           style="color: white"></a></button>
                 </div>
 
                 <div style="padding-top: 20px;padding-bottom: 20px">
                     <button type="button" class="btn btn-info btn-lg btn-block">
-                        <a th:href="@{/newEssay}" th:text="新的文章"></a></button>
+                        <a th:href="@{/newEssay}"
+                           th:text="新的文章"
+                           style="color: white"></a></button>
                 </div>
 
-
             </span>
-            <!--文章-->
-            <span class="col-lg-9">
+            <!--热门文章-->
+            <span class="col-lg-10">
                 <table class="table table-hover">
                     <tr>
                         <h1 class="col-lg-offset-4">热门文章</h1>
                     </tr>
                     <tr th:each="hotEssayList:${hotEssayList}" id="Tr">
-                        <td th:text="${hotEssayList.title}"></td>
-                        <td th:text="${hotEssayList.nol}"></td>
-                        <td th:text="${hotEssayList.username}"></td>
+                        <td>
+                            <div>
+                                <h4>
+                                    <a th:text="${hotEssayList.title}"
+                                       th:href="@{/getEssayByEssayId(essayId=${hotEssayList.essayId})}"
+                                       style="color: #0f0f0f"
+                                        target="_blank">
+                                    </a></h4></div>
+
+                            <div>
+                                <a th:text="${hotEssayList.username}"
+                                th:href="@{/toDebaterUserCenter(debateId=${hotEssayList.debateId})}"
+                                style="color: #0f0f0f"
+                                target="_blank"></a>
+                                &nbsp;&nbsp;
+                                <span th:text="${hotEssayList.date}"></span>
+                                &nbsp;&nbsp;
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                                <span th:text="${hotEssayList.nol}"></span>
+                                </div>
+
+                        </td>
                     </tr>
                 </table>
             </span>
         </div>
     </div>
 
+
+    <script th:inline="javascript">
+
+        const Tr = document.getElementById("Tr");
+
+        function toEssay(){
+            self.location.href = "@{/getEssayByEssayId(essayId=[[${hotEssay.essayId]])}";
+        }
+
+        Tr.addEventListener("click",toEssay(),false)
+    </script>
+
 </body>
+
+
 </html>

@@ -10,34 +10,40 @@
 <body>
     <div class="container">
         <!--页头：头像+用户名-->
-        <div class="page-header col-lg-12">
-            <h1>
-                <img scr="" class="img-circle" style="width: 75px;height: 75px">
+        <div class="page-header col-lg-12" style="margin-top: 20px">
+            <h1 style="margin-top: 10px">
+                <img scr="" class="img-circle" style="width: 100px;height: 100px">
                 <small th:text="${username}"></small>
             </h1>
         </div>
         <!--页面内容:近期动态展示-->
         <div class="row">
-            <div class="col-md-12">
-                <table class="table table-hover">
+            <span class="col-lg-9">
+                <table class="table table-hover ">
 
                     <tr th:each="essay:${essayList}" >
-                        <td th:text="${essay.title}" ></td>
-                        <td th:text="${essay.nol}"></td>
-                        <td th:text="${essay.username}"></td>
-                        <td th:text="${essay.date}"></td>
-                        <th>
-                            <button class="btn btn-primary btn-sm">
-                                <span class="glyphicon glyphicon-pencil" aria-hidden="true">编辑</span>
-                            </button>
-                            <button class="btn btn-info btn-sm">
-                                <a th:href="@{/getEssayByEssayId(essayId=${essay.essayId})}" th:text="阅读全文"></a>
-                            </button>
+                        <td>
+                            <div>
+                                <h4>
+                                    <a th:text="${essay.title}"
+                                       th:href="@{/getEssayByEssayId(essayId=${essay.essayId})}"
+                                       style="color: #0f0f0f">
+                                    </a></h4></div>
 
-                        </th>
+                            <div>
+                                <span th:text="${essay.username}"></span>
+                                &nbsp;l&nbsp;
+                                <span th:text="${essay.date}"></span>
+                                &nbsp;&nbsp;
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                                <span th:text="${essay.nol}"></span>
+                                </div>
+
+                        </td>
+
                     </tr>
                 </table>
-            </div>
+            </span>
         </div>
     </div>
 </body>

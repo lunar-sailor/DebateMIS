@@ -74,8 +74,7 @@ public class CookieUtil {
      * @param request
      * @param deleteKey
      */
-    private void delectCookieByName(
-            HttpServletResponse response,HttpServletRequest request,String deleteKey){
+    private void delectCookieByName(HttpServletResponse response,HttpServletRequest request,String deleteKey){
         Map<String,Cookie> cookieMap = ReadCookieMap(request);
         for (String key:cookieMap.keySet()){
             if (key==deleteKey && key.equals(deleteKey)){
@@ -84,6 +83,19 @@ public class CookieUtil {
                 cookie.setPath("/");
                 response.addCookie(cookie);
             }
+        }
+    }
+
+    /**
+     * 判断Cookie是否为空
+     * 空返回true,非空返回false；
+     */
+    public static boolean ifEmpty(HttpServletResponse response,HttpServletRequest request){
+        Map<String,Cookie> cookieMap = ReadCookieMap(request);
+        if (cookieMap.isEmpty()){
+            return true;
+        }else {
+            return false;
         }
     }
 }

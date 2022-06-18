@@ -60,7 +60,6 @@ public class DebaterController {
     ){
         //对查询结果进行分页
         PageHelper.startPage(pn,5);
-
         List<Debater> list = debaterService.getAllDebater();
         //使用pageInfo包装查询后的结果
         //pageInfo封装了详细的分页信息，可以直接将pageInfo交给页面

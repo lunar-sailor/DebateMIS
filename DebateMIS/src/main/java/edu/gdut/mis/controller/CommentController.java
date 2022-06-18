@@ -21,7 +21,7 @@ public class CommentController {
 
     @RequestMapping("/insertComment")
     @ResponseBody
-    public List<Comment>                                 insertComment(Integer essayId, Integer debateId, String username, String content, Model model,
+    public List<Comment> insertComment(Integer essayId, Integer debateId, String username, String content, Model model,
                                        @RequestParam(value = "pn",defaultValue = "1") Integer pn){
         Comment comment = new Comment(null,essayId,debateId,username,content,null);
         commentService.insertComment(comment);

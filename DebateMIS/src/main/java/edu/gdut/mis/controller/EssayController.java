@@ -49,7 +49,6 @@ public class EssayController {
     @RequestMapping("/getEssayByEssayId")//essayID
     public String getEssayByEssayId(@RequestParam(value = "pn",defaultValue = "1") Integer pn,
                                     HttpServletRequest request, Integer essayId, Model model){
-        Integer debateId = Integer.valueOf(CookieUtil.getCookieByName(request,"debateId").getValue());
         Essay essay =  essayService.getEssayByEssayId(essayId);
         //加载对应的评论
         List<Comment> list = commentService.getAllCommentByEssayId(essayId);
@@ -66,10 +65,18 @@ public class EssayController {
         return "essay";
     }
 
-    @RequestMapping("/getNol")
+    @RequestMapping("/updateNol")
     @ResponseBody
-    public Integer like(HttpServletRequest request,Integer essayId){
-        Integer nol = essayService.updateNol(essayId);
+    public Integer like(HttpServletRequest request,@Param("essayId") Integer essayId){
+        Integer debateId = Integer.valueOf(CookieUtil.getCookieByName(request,"debateId").getValue());
+        Integer nol;
+        if(essayService.hasLiked(essayId,debateId)){
+            nol = essayService.getNol(essayId);
+        }else {
+            essayService.updateNol(essayId);
+            essayService.insertLike_Record(essayId,debateId);
+            nol = essayService.getNol(essayId);
+        }
         return nol;
     }
 

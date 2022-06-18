@@ -1,7 +1,9 @@
 package edu.gdut.mis.service;
 
 import edu.gdut.mis.entity.Essay;
+import edu.gdut.mis.entity.Record;
 import edu.gdut.mis.mappers.EssayMapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,13 +31,23 @@ public class EssayService {
 
     public Integer getNol(Integer essayId){
         Integer nol = essayMapper.getNol(essayId);
-        return essayId;
+        return nol;
     }
 
-    public Integer updateNol(Integer essayId){
-        essayMapper.updateNol(essayId);
-        Integer nol = essayMapper.getNol(essayId);
-        return nol;
+    public void updateNol(Integer essayId){
+            essayMapper.updateNol(essayId);
+    }
+
+    public Boolean hasLiked(@Param("essayId") Integer essayId, @Param("debateId") Integer debateId){
+        int num = essayMapper.hasLiked(essayId,debateId);
+        if (num > 0){
+            return true;
+        }
+        return false;
+    }
+
+    public void insertLike_Record(@Param("debateId")Integer essayId,@Param("debateId")Integer debateId){
+        essayMapper.insertLike_Record(essayId,debateId);
     }
 
     public List<Essay> showHotEssay() {
